@@ -5,7 +5,7 @@ where would be the fun in that?
 
 ## Features
 
-Intended as a mobile-first webapp, this is simpe control centre for the smartdoor project.
+Intended as a mobile-first webapp, this is simple control centre for the smartdoor project.
 
 - Static photo of the doorcam
 - Streaming video from the doorcam
@@ -16,8 +16,8 @@ Intended as a mobile-first webapp, this is simpe control centre for the smartdoo
 
 ## Hardware Requirements
 
-* Pimoroni Automation HAT for door lock control
-* Official camera module
+- Pimoroni Automation HAT for door lock control
+- Official camera module
 
 ## Physical
 

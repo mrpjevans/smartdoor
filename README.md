@@ -1,16 +1,17 @@
 # smartdoor
+
 Code to accompany the smart door tutorial in MagPi #76
 
-### Looking for the Webapp?
+### Webapp
 
-The 'webapp' folder referenced in the article will be appearing here very soon. Thank you for your patience. **UPDATED** Well that didn't happen. Apologies but die to several factors, not least 2020 in general, I simply ran out of time to finish this. If you have any questions to help you get started, please do ask.
+A 'fancier' version of the tools here can be found in the webapp directory. Have a look at the README inside there for setup instructions.
 
 ### How To Start on Boot
 
 A quick and easy way to start a Python script on boot is to add it to rc.local.
 
 ```
-$ sudo nano /etc/rc.local 
+$ sudo nano /etc/rc.local
 ```
 
 Now find the last line, exit(0) and add something like this above it:
