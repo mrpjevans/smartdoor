@@ -3,7 +3,7 @@ Code to accompany the smart door tutorial in MagPi #76
 
 ### Looking for the Webapp?
 
-The 'webapp' folder referenced in the article will be appearing here very soon. Thank you for your patience.
+The 'webapp' folder referenced in the article will be appearing here very soon. Thank you for your patience. **UPDATED** Well that didn't happen. Apologies but die to several factors, not least 2020 in general, I simply ran out of time to finish this. If you have any questions to help you get started, please do ask.
 
 ### How To Start on Boot
 
