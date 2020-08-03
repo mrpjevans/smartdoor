@@ -1,71 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Smart Door</title>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <title>Smart Door</title>
 
-    <link rel="stylesheet" type="text/css" href="static/style.css" />
-    <script src="static/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="apple-touch-icon" href="static/klaxon.png" />
-  </head>
-  <body>
-    <div class="full">
-      <nav>
-        <div class="buttonBarContainer">
-          <h1>front door</h1>
-        </div>
-      </nav>
-      {% block body %}
-      <div class="buttonBar50 teal" data-event="photo">
-        <div class="buttonBarContainer" onclick="window.location = '/photo'">
-          <i class="fas fa-camera"></i>
-        </div>
+  <link rel="stylesheet" type="text/css" href="static/style.css" />
+  <script src="static/script.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-icon" href="static/klaxon.png" />
+</head>
+
+<body>
+  <div class="full">
+    <nav>
+      <div class="buttonBarContainer">
+        <h1>front door</h1>
       </div>
-      <div class="buttonBar50 blue" data-event="video">
-        <div class="buttonBarContainer" onclick="window.location = '/video'">
-          <i class="fas fa-video"></i>
-        </div>
+    </nav>
+    {% block body %}
+    <div class="buttonBar50 teal" data-event="photo">
+      <div class="buttonBarContainer" onclick="window.location = '/photo'">
+        <i class="fas fa-camera"></i>
       </div>
-      <div class="buttonBar50 purple" data-event="door">
-        <div class="buttonBarContainer">
-          <i class="fas fa-door-closed"></i>
-        </div>
-      </div>
-      <div class="buttonBar50 green" data-event="letterbox">
-        <div class="buttonBarContainer">
-          <i class="fas fa-envelope"></i>
-        </div>
-      </div>
-      <div
-        class="buttonBar50 brown"
-        data-event="history"
-        onclick="window.location = '/history'"
-      >
-        <div class="buttonBarContainer">
-          <i class="fas fa-history"></i>
-        </div>
-      </div>
-      <div class="buttonBar50 red" data-event="lock">
-        <div class="buttonBarContainer">
-          <i class="fas fa-lock-open"></i>
-        </div>
-      </div>
-      {% endblock %}
     </div>
-  </body>
+    <div class="buttonBar50 blue" data-event="video">
+      <div class="buttonBarContainer" onclick="window.location = '/video'">
+        <i class="fas fa-video"></i>
+      </div>
+    </div>
+    <div class="buttonBar50 purple" data-event="door">
+      <div class="buttonBarContainer" onclick="window.location = '/door'">
+        <i class="fas fa-door-closed"></i>
+      </div>
+    </div>
+    <div class="buttonBar50 green" data-event="letterbox">
+      <div class="buttonBarContainer" onclick="window.location = '/letterbox'">
+        <i class="fas fa-envelope"></i>
+      </div>
+    </div>
+    <div class="buttonBar50 brown" data-event="history" onclick="window.location = '/history'">
+      <div class="buttonBarContainer">
+        <i class="fas fa-history"></i>
+      </div>
+    </div>
+    <div class="buttonBar50 red" data-event="lock">
+      <div class="buttonBarContainer" onclick="unlockDoor()">
+        <i class="fas fa-lock"></i>
+      </div>
+    </div>
+    {% endblock %}
+  </div>
+</body>
+
 </html>

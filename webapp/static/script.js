@@ -21,3 +21,11 @@ $(() => {
 function resetIcon(target, html) {
   $(target).find(".buttonBarContainer").html(html);
 }
+
+async function unlockDoor() {
+  const button = $('[data-event=lock]').find('.buttonBarContainer')
+  const oldHtml = button.html()
+  button.html('<i class="fas fa-lock-open"></i>')
+  await $.getJSON('/unlock')
+  button.html(oldHtml)
+}
